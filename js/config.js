@@ -49,5 +49,5 @@ window.BODA = {
   musica: "audio/cancion.mp3", // ruta de la canción, p. ej. "audio/cancion.mp3"
 
   // URL de la aplicación web de Apps Script (Google Sheets). Vacía = los formularios funcionan en modo prueba.
-  formURL: ""
+  formURL: "https://script.google.com/macros/s/AKfycbzVbuHENcKAKFYbpZhblXSiN8dqxzltxWuO7cBa74irt8lAUBSDsdgFtmqwjodDhuRsKA/exec"
 };
