@@ -138,7 +138,7 @@ body:not(.sin-rascar) .rasca-aviso{display:none}
 .ev-lugar{font-family:var(--f-title);font-size:34px;font-weight:700;color:var(--gold)}
 .isla{width:210px;max-width:100%;height:auto;margin-block:0 -6px}
 .isla-wrap{position:relative;line-height:0}
-.pin{position:absolute;left:52%;top:46%;width:22px;height:auto;overflow:visible;transform:translate(-50%,-94%);filter:drop-shadow(0 3px 3px rgba(27,43,68,.28))}
+.pin{position:absolute;left:31%;top:56%;width:22px;height:auto;overflow:visible;transform:translate(-50%,-94%);filter:drop-shadow(0 3px 3px rgba(27,43,68,.28))}
 
 /* Carrusel */
 .carousel{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;width:calc(100% + 32px);padding:4px 13vw 10px;

@@ -287,7 +287,7 @@
     if (!vacio(ev.hora)) { var h = $(".ev-hora", cuerpo); h.textContent = ev.hora + " h"; h.hidden = false; }
     $(".ev-row b", cuerpo).textContent = f.dia;
     $(".ev-anio", cuerpo).textContent = f.anio;
-    $(".ev-lugar", cuerpo).textContent = vacio(ev.lugar) ? "Mallorca" : ev.lugar;
+    $(".ev-lugar", cuerpo).textContent = vacio(ev.lugar) ? "Palma de Mallorca" : ev.lugar;
     var a = $("a", cuerpo);
     if (ev.mapa) a.href = ev.mapa; else a.remove(); // sin enlace de Maps no se muestra el botón
     card.appendChild(cuerpo);
