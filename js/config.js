@@ -10,7 +10,7 @@ window.BODA = {
   fecha: { diaSemana: "Sábado", dia: "12", mes: "Diciembre", anio: "2026" },
 
   ceremonia: {
-    hora: "A partir de las 13 horas",
+    hora: "", // vacío = no sale en la tarjeta
     lugar: "Palma de Mallorca",
     mapa: "", // el botón «¿Cómo llegar?» está en el apartado del restaurante
     nota: "La ceremonia civil, con la firma del matrimonio, tendrá lugar el viernes 11 de diciembre."
