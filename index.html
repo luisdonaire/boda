@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Edimar &amp; Luis · Nuestra boda</title>
-<meta name="description" content="Invitación a la boda de Edimar y Luis · 11 de diciembre de 2026 · Mallorca">
+<meta name="description" content="Invitación a la boda de Edimar y Luis · 12 de diciembre de 2026 · Mallorca">
 <meta name="theme-color" content="#FBF9F5">
 <!-- Que el iPhone no convierta fechas, teléfonos ni direcciones en enlaces subrayados -->
 <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
@@ -184,13 +184,30 @@
 
   <div class="garland edge" aria-hidden="true"></div>
 
-  <!-- 4. Ceremonia y recepción -->
+  <!-- 4. Celebración y restaurante -->
   <section class="dark stack">
     <video class="bg" src="video/v3.mp4" poster="img/fotos/abrazo.jpg" muted playsinline loop preload="none"></video>
     <article class="card evento" data-ev="ceremonia">
       <svg class="ico big" viewBox="0 0 64 48" aria-hidden="true"><use href="#i-anillos"/></svg>
-      <h3 class="ev-t">Celebración civil</h3>
+      <h3 class="ev-t">Celebración</h3>
     </article>
+  </section>
+
+  <div class="garland edge" aria-hidden="true"></div>
+
+  <section class="light" id="restaurante">
+    <h2 class="title">El restaurante</h2>
+    <span class="rule ink"></span>
+    <svg class="ico big" viewBox="0 0 64 56" aria-hidden="true"><use href="#i-copas"/></svg>
+    <p class="ev-lugar" data-c="restaurante.nombre"></p>
+    <p class="sub" data-c="restaurante.direccion"></p>
+    <div class="rest-horas">
+      <div><b data-c="restaurante.llegada"></b><span>Os esperamos a partir de esta hora</span></div>
+      <div><b data-c="restaurante.comida"></b><span>Empieza el servicio de la comida</span></div>
+    </div>
+    <p class="rest-info"><b>En coche:</b> <span data-c="restaurante.coche"></span></p>
+    <p class="rest-info"><b>Importante:</b> <span data-c="restaurante.aparcar"></span></p>
+    <a class="btn" id="rest-mapa" target="_blank" rel="noopener">¿Cómo llegar?</a>
   </section>
 
   <div class="garland edge" aria-hidden="true"></div>

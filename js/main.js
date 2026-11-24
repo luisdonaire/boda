@@ -282,9 +282,10 @@
     var ev = C[card.dataset.ev] || {}, f = C.fecha || {};
     var cuerpo = document.createElement("div");
     cuerpo.className = "ev-body";
-    cuerpo.innerHTML = '<div class="ev-row"><span></span><b></b><span></span></div><p class="ev-anio"></p><p class="ev-hora" hidden></p><p class="ev-lab">Ubicación</p><p class="ev-lugar"></p><div class="isla-wrap"><img class="isla" src="img/mallorca.png" alt="Mapa de Mallorca" width="936" height="644"><svg class="pin" viewBox="0 0 40 54" aria-hidden="true"><defs><linearGradient id="g-pin" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F4DFA3"/><stop offset=".35" stop-color="#D4A23A"/><stop offset=".7" stop-color="#9A7019"/><stop offset="1" stop-color="#D4A23A"/></linearGradient></defs><path d="M20 50.5 C14 41.5 4.5 31 4.5 19.5 A15.5 15.5 0 0 1 35.5 19.5 C35.5 31 26 41.5 20 50.5 Z" fill="none" stroke="url(#g-pin)" stroke-width="3.8" stroke-linejoin="round"/><circle cx="20" cy="19.5" r="6.6" fill="none" stroke="url(#g-pin)" stroke-width="3.2"/><path d="M9 14 A12 12 0 0 1 16 8.2" fill="none" stroke="#FFF6DC" stroke-width="1.1" stroke-linecap="round" opacity=".8"/></svg></div><a class="btn" target="_blank" rel="noopener">¿Cómo llegar?</a>';
+    cuerpo.innerHTML = '<div class="ev-row"><span></span><b></b><span></span></div><p class="ev-anio"></p><p class="ev-hora" hidden></p><p class="ev-nota" hidden></p><p class="ev-lab">Ubicación</p><p class="ev-lugar"></p><div class="isla-wrap"><img class="isla" src="img/mallorca.png" alt="Mapa de Mallorca" width="936" height="644"><svg class="pin" viewBox="0 0 40 54" aria-hidden="true"><defs><linearGradient id="g-pin" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F4DFA3"/><stop offset=".35" stop-color="#D4A23A"/><stop offset=".7" stop-color="#9A7019"/><stop offset="1" stop-color="#D4A23A"/></linearGradient></defs><path d="M20 50.5 C14 41.5 4.5 31 4.5 19.5 A15.5 15.5 0 0 1 35.5 19.5 C35.5 31 26 41.5 20 50.5 Z" fill="none" stroke="url(#g-pin)" stroke-width="3.8" stroke-linejoin="round"/><circle cx="20" cy="19.5" r="6.6" fill="none" stroke="url(#g-pin)" stroke-width="3.2"/><path d="M9 14 A12 12 0 0 1 16 8.2" fill="none" stroke="#FFF6DC" stroke-width="1.1" stroke-linecap="round" opacity=".8"/></svg></div><a class="btn" target="_blank" rel="noopener">¿Cómo llegar?</a>';
     var sp = $$(".ev-row span", cuerpo); sp[0].textContent = f.diaSemana; sp[1].textContent = f.mes;
-    if (!vacio(ev.hora)) { var h = $(".ev-hora", cuerpo); h.textContent = ev.hora + " h"; h.hidden = false; }
+    if (!vacio(ev.hora)) { var h = $(".ev-hora", cuerpo); h.textContent = ev.hora; h.hidden = false; }
+    if (ev.nota) { var nt = $(".ev-nota", cuerpo); nt.textContent = ev.nota; nt.hidden = false; }
     $(".ev-row b", cuerpo).textContent = f.dia;
     $(".ev-anio", cuerpo).textContent = f.anio;
     $(".ev-lugar", cuerpo).textContent = vacio(ev.lugar) ? "Palma de Mallorca" : ev.lugar;
@@ -292,6 +293,7 @@
     if (ev.mapa) a.href = ev.mapa; else a.remove(); // sin enlace de Maps no se muestra el botón
     card.appendChild(cuerpo);
   });
+  $("#rest-mapa").href = C.restaurante.mapa;
 
   /* ---------- Carrusel de fotos ---------- */
   var car = $("#carousel"), dots = $("#dots");

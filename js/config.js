@@ -5,14 +5,25 @@ window.BODA = {
   novio: "Luis",
   frase: "Te elijo hoy y por el resto de mi vida",
 
-  // Fecha y hora para la cuenta atrás (hora de Mallorca). Cambia la hora cuando la sepáis.
-  fechaISO: "2026-12-11T17:00:00+01:00",
-  fecha: { diaSemana: "Viernes", dia: "11", mes: "Diciembre", anio: "2026" },
+  // Fecha y hora para la cuenta atrás (hora de Mallorca).
+  fechaISO: "2026-12-12T13:00:00+01:00",
+  fecha: { diaSemana: "Sábado", dia: "12", mes: "Diciembre", anio: "2026" },
 
   ceremonia: {
-    hora: "Próximamente", // p. ej. "17:00"
-    lugar: "Próximamente",
-    mapa: "" // enlace de Google Maps, p. ej. "https://maps.app.goo.gl/..."
+    hora: "A partir de las 13 horas",
+    lugar: "Palma de Mallorca",
+    mapa: "", // el botón «¿Cómo llegar?» está en el apartado del restaurante
+    nota: "La ceremonia civil, con la firma del matrimonio, tendrá lugar el viernes 11 de diciembre."
+  },
+
+  restaurante: {
+    nombre: "Groenk Bistro & Grill",
+    direccion: "Carrer Arxiduc Lluís Salvador, 11, 07179 Deià",
+    mapa: "https://maps.app.goo.gl/YtxWWhQHTgZ9X9Xv7",
+    llegada: "13:00",
+    comida: "13:30",
+    coche: "Unos 35-40 minutos desde Palma (30 km).",
+    aparcar: "En Deià es difícil aparcar, así que organizaos para ir en el menor número de coches posible."
   },
 
   fotos: [
